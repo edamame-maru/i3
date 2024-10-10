@@ -187,6 +187,7 @@ bar {
         position top
         status_command i3status
 }
+
 # Set wallpaper 
 exec_always feh --bg-scale ~/wallpapers/small.png 
 
@@ -194,6 +195,8 @@ exec_always feh --bg-scale ~/wallpapers/small.png
 gaps inner 25  
 gaps outer 25  
  
+# Turn on smart gaps, adds gaps between windows only when >= 2 windows are processes 
 smart_gaps on
 
-exec_always setxkbmap us
+# Set keyboard layout
+exec_always setxkbmap us 
